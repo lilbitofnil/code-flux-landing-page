@@ -14,7 +14,80 @@ export type Database = {
   }
   public: {
     Tables: {
-      [_ in never]: never
+      hackathon_participants: {
+        Row: {
+          created_at: string
+          email: string
+          full_name: string
+          id: string
+          is_captain: boolean
+          registration_id: string
+        }
+        Insert: {
+          created_at?: string
+          email: string
+          full_name: string
+          id?: string
+          is_captain?: boolean
+          registration_id: string
+        }
+        Update: {
+          created_at?: string
+          email?: string
+          full_name?: string
+          id?: string
+          is_captain?: boolean
+          registration_id?: string
+        }
+        Relationships: [
+          {
+            foreignKeyName: "hackathon_participants_registration_id_fkey"
+            columns: ["registration_id"]
+            isOneToOne: false
+            referencedRelation: "hackathon_registrations"
+            referencedColumns: ["id"]
+          },
+        ]
+      }
+      hackathon_registrations: {
+        Row: {
+          captain_phone: string
+          confirmation_sent_at: string | null
+          created_at: string
+          id: string
+          institution: string
+          project_idea: string
+          registration_code: string
+          team_name: string
+          track: string
+          updated_at: string
+        }
+        Insert: {
+          captain_phone: string
+          confirmation_sent_at?: string | null
+          created_at?: string
+          id?: string
+          institution: string
+          project_idea: string
+          registration_code: string
+          team_name: string
+          track: string
+          updated_at?: string
+        }
+        Update: {
+          captain_phone?: string
+          confirmation_sent_at?: string | null
+          created_at?: string
+          id?: string
+          institution?: string
+          project_idea?: string
+          registration_code?: string
+          team_name?: string
+          track?: string
+          updated_at?: string
+        }
+        Relationships: []
+      }
     }
     Views: {
       [_ in never]: never
