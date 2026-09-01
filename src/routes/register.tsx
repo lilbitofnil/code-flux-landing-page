@@ -7,9 +7,9 @@ export const Route = createFileRoute("/register")({
   head: () => ({
     meta: [
       { title: "Register — CODE FLUX Hackathon" },
-      { name: "description", content: "Register your team for CODE FLUX, the 36-hour student hackathon at LPU Campus, Phagwara, Punjab." },
+      { name: "description", content: "Register your team for CODE FLUX, the 36-hour student hackathon at Lovely Professional University." },
       { property: "og:title", content: "Register — CODE FLUX Hackathon" },
-      { property: "og:description", content: "Register your team for CODE FLUX, the 36-hour student hackathon at LPU Campus." },
+      { property: "og:description", content: "Register your team for CODE FLUX, the 36-hour student hackathon at Lovely Professional University." },
     ],
   }),
   component: RegisterPage,
