@@ -68,7 +68,7 @@ function Wordmark({ large = false }: { large?: boolean }) {
 }
 
 function RegisterButton({ variant = "flux", label = "Register now" }: { variant?: "flux" | "ink"; label?: string }) {
-  return <Button asChild variant={variant} size="xl"><a href={REGISTRATION_URL} target="_blank" rel="noreferrer">{label}<ArrowRight /></a></Button>;
+  return <Button asChild variant={variant} size="xl"><a href={REGISTRATION_URL}>{label}<ArrowRight /></a></Button>;
 }
 
 function SectionHead({ label, title, text }: { label: string; title: string; text?: string }) {
