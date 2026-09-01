@@ -1,5 +1,5 @@
 import { createFileRoute } from "@tanstack/react-router";
-import { About, EventStats, FAQ, FinalCTA, Footer, Hero, HowItWorks, Mentorship, Navbar, Prizes, RegistrationCTA, Timeline, Tracks, WhyParticipate } from "@/components/code-flux";
+import { About, EventStats, FAQ, FinalCTA, Footer, Hero, HowItWorks, Mentorship, Navbar, RegistrationCTA, Timeline, Tracks, WhyParticipate } from "@/components/code-flux";
 
 export const Route = createFileRoute("/")({
   head: () => ({ meta: [
@@ -25,7 +25,6 @@ function Index() {
       <HowItWorks />
       <Timeline />
       <Mentorship />
-      <Prizes />
       <RegistrationCTA />
       <FAQ />
       <FinalCTA />
