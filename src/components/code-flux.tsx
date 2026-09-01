@@ -7,7 +7,7 @@ import {
 } from "lucide-react";
 import { Button } from "@/components/ui/button";
 
-export const REGISTRATION_URL = "REGISTRATION_URL_HERE";
+export const REGISTRATION_URL = "/register";
 
 type Accent = "blue" | "green" | "orange" | "red";
 const accentText: Record<Accent, string> = { blue: "text-brand", green: "text-brand-green", orange: "text-brand-orange", red: "text-brand-red" };
@@ -68,7 +68,7 @@ function Wordmark({ large = false }: { large?: boolean }) {
 }
 
 function RegisterButton({ variant = "flux", label = "Register now" }: { variant?: "flux" | "ink"; label?: string }) {
-  return <Button asChild variant={variant} size="xl"><a href={REGISTRATION_URL} target="_blank" rel="noreferrer">{label}<ArrowRight /></a></Button>;
+  return <Button asChild variant={variant} size="xl"><a href={REGISTRATION_URL}>{label}<ArrowRight /></a></Button>;
 }
 
 function SectionHead({ label, title, text }: { label: string; title: string; text?: string }) {
