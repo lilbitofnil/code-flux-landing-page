@@ -2,7 +2,7 @@ import { useEffect, useState, type ComponentType } from "react";
 import * as Accordion from "@radix-ui/react-accordion";
 import {
   ArrowDown, ArrowRight, Award, BrainCircuit, CalendarDays, ChevronDown, Clock3,
-  Code2, Gift, Github, GraduationCap, HeartPulse, Instagram, Lightbulb, Linkedin,
+  Code2, Gift, GraduationCap, HeartPulse, Instagram, Lightbulb,
   MapPin, Menu, Network, Sparkles, Trophy, Users, WalletCards, Wrench, X,
 } from "lucide-react";
 import { Button } from "@/components/ui/button";
