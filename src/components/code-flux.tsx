@@ -7,7 +7,7 @@ import {
 } from "lucide-react";
 import { Button } from "@/components/ui/button";
 
-export const REGISTRATION_URL = "REGISTRATION_URL_HERE";
+export const REGISTRATION_URL = "/register";
 
 type Accent = "blue" | "green" | "orange" | "red";
 const accentText: Record<Accent, string> = { blue: "text-brand", green: "text-brand-green", orange: "text-brand-orange", red: "text-brand-red" };
